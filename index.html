@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>jquery.generals</title>
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<div class="main">
+
+<div class="row">
+<section class="large-12 columns">
+<h1 class="docs header">jquery.generals</h1>
+<hr>
+
+<section class="js-generalAccordion">
+<h2 class="subheader">jquery.generalAccordion.js</h2>
+
+<div>
+<button class="js-generalAccordionBtn radius">accordion button 1-1</button>
+<div class="js-generalAccordionPanel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores laudantium libero dolores consequatur consectetur aperiam quasi quaerat reiciendis labore deleniti beatae commodi repellat ducimus et dolorum quidem assumenda accusantium modi.</p>
+<!-- /.generalAccordionPanel --></div>
+</div>
+
+<div>
+<button class="js-generalAccordionBtn radius">accordion button 1-2</button>
+<div class="js-generalAccordionPanel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores laudantium libero dolores consequatur consectetur aperiam quasi quaerat reiciendis labore deleniti beatae commodi repellat ducimus et dolorum quidem assumenda accusantium modi.</p>
+<!-- /.generalAccordionPanel --></div>
+</div>
+<!-- /#generalAccrodion --></section>
+
+<div class="js-generalAccordion">
+
+<div>
+<button class="js-generalAccordionBtn radius">accordion button 2-1</button>
+<div class="js-generalAccordionPanel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores laudantium libero dolores consequatur consectetur aperiam quasi quaerat reiciendis labore deleniti beatae commodi repellat ducimus et dolorum quidem assumenda accusantium modi.</p>
+<!-- /.generalAccordionPanel --></div>
+</div>
+
+<div>
+<button class="js-generalAccordionBtn radius">accordion button 2-2</button>
+<div class="js-generalAccordionPanel">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores laudantium libero dolores consequatur consectetur aperiam quasi quaerat reiciendis labore deleniti beatae commodi repellat ducimus et dolorum quidem assumenda accusantium modi.</p>
+<!-- /.generalAccordionPanel --></div>
+</div>
+<!-- /#generalAccrodion --></div>
+
+<p><small>&copy; komei otake.</small></p>
+<!-- /.large-12 --></section>
+<!-- /.row --></div>
+<!-- /.main --></div>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/jquery.generalAccordion.js"></script>
+<script>
+(function($){
+	$(".js-generalAccordion").generalAccordion({
+		generalAccordionBtn: ".js-generalAccordionBtn",
+		generalAccordionPanel: ".js-generalAccordionPanel",
+		openSpeed: 300,
+		closeSpeed: 300
+	});
+})(jQuery);
+</script>
+</body>
+</html>
