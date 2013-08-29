@@ -29,13 +29,14 @@
 			// ボタンがクリックされた時の処理
 			$generalAccordionBtn.on("click", function(ev){
 				// もし、クリックされた要素の次の要素がdisplay:noneだったら
-				if($(this).next().css("display") !== "none") {
+				var thisNext = $(this).next();
+				if(thisNext.css("display") !== "none") {
 					// slideUpを実行
-					$(this).next().slideUp(options.openSpeed);
+					thisNext.slideUp(options.openSpeed);
 				// display:noneじゃなかったら
 				} else {
 					// slideDownを実行
-					$(this).next().slideDown(options.closeSpeed);
+					thisNext.slideDown(options.closeSpeed);
 				}
 				// a要素でも大丈夫なように、ブラウザの挙動を止める
 				return false;
