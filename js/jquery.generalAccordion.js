@@ -34,7 +34,7 @@
 				// もし、クリックされた要素hrefに入った要素がdisplay:noneだったら
 				if(btnAttr.css("display") !== "none") {
 					// slideUpを実行
-					thisNext.slideUp(options.openSpeed);
+					btnAttr.slideUp(options.openSpeed);
 				// display:noneじゃなかったら
 				} else {
 					// slideDownを実行
