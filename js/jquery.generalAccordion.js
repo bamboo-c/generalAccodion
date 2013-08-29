@@ -28,15 +28,17 @@
 
 			// ボタンがクリックされた時の処理
 			$generalAccordionBtn.on("click", function(ev){
-				// もし、クリックされた要素の次の要素がdisplay:noneだったら
-				var thisNext = $(this).next();
-				if(thisNext.css("display") !== "none") {
+				// ボタンのhrefを変数に入れる
+				var btnAttr = $($(this).attr("href"));
+
+				// もし、クリックされた要素hrefに入った要素がdisplay:noneだったら
+				if(btnAttr.css("display") !== "none") {
 					// slideUpを実行
 					thisNext.slideUp(options.openSpeed);
 				// display:noneじゃなかったら
 				} else {
 					// slideDownを実行
-					thisNext.slideDown(options.closeSpeed);
+					btnAttr.slideDown(options.closeSpeed);
 				}
 				// a要素でも大丈夫なように、ブラウザの挙動を止める
 				return false;
