@@ -43,7 +43,13 @@
 (function($){
 	$(".js-generalAccordionBtn").generalAccordion({
 		openSpeed: 300,
-		closeSpeed: 300
+		closeSpeed: 300,
+		openAfterAction: function() {
+			alert("open");
+		},
+		closeAfterAction: function() {
+			alert("close");
+		},
 	});
 })(jQuery);
 </script>
